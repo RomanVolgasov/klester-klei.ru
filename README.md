@@ -1,1 +1,1 @@
-Использую: SCSS, Jade
+В проекте использовались следущие технологии: Jade, SASS, RFS, bootstrap 3 (grid),

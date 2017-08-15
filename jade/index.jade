@@ -1,0 +1,115 @@
+doctype
+html(lang="ru")
+  head
+    include _components/_service.jade
+    // ⚠️ SEO ⚠️
+    title Пенополистирол в Калининграде оптом и в розницу
+    meta(name="description" content="Выгодная цена на пенополистирол (пенопласт) от производителя. Доставка по Калининграду и области. Марки ПСБ-С разной плотности. Для утепления фасада, пола и перегородок")
+    meta(name="keywords" content="пенополистирол, пенопласт, псб-с, купить, цена, калининград, производитель, утепление, klester, ")
+    meta(name="robots" content="all")
+    link(rel="canonical" href="http://penoplast-klester.ru/")
+    include _path/_css.jade
+    include _components/_web-master.jade
+    include _path/_favicon.jade
+    // ⚠️ OPEN GRAPH ⚠️
+    meta(property="og:title" content="Купить пенополистирол в Калининграде")
+    meta(property="og:description" content="Выгодная цена на пенополистирол (пенопласт) от производителя. Доставка по Калининграду и области. Марки ПСБ-С разной плотности. Для утепления фасада, пола и перегородок")
+    meta(property="og:image" content="img/eps-item.png")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="http://penoplast-klester.ru/")
+    include _components/_author.jade
+
+  body.hyphenate
+    .outdated
+    .container-fluid.header
+      header.container#top
+        .row
+          .col-xs-12
+            h1.sr-only Пенополистирол в Калининграде оптом и в розницу
+            include _path/_top-flex-menu.jade
+            include _components/_address.jade
+    section.container
+      .row
+        .col-xs-12
+          h2.donthyphenate Каталог сухих смесей
+          .col-xs-12.single.slider
+            include _path/_slick-top.jade
+    
+    include _path/_script.jade
+    script(src="js/jquery-3.2.1.slim.min.js")
+    script(src="js/Hyphenator.js")
+    script(src="js/outdatedbrowser.min.js")
+    //- script(src="js/jquery.waypoints.min.js")
+    script(src="js/slick.min.js")
+    script(src="js/custom.js")
+    script.
+      Hyphenator.run();
+      function addLoadEvent(func) {
+        var oldonload = window.onload;
+        if (typeof window.onload != 'function') {
+          window.onload = func;
+        } else {
+          window.onload = function() {
+            if (oldonload) {
+              oldonload();
+            }
+          func();
+          }
+        }
+      }
+      //call plugin function after DOM ready
+      addLoadEvent(function(){
+        outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'transform',
+          languagePath: 'js/lang/ru.html'
+        })
+      });
+      // Slik
+      $(document).ready(function() {
+        $(".single").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          dots: true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 8000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+        $(".vertical").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        });
+      });
