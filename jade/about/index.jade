@@ -1,0 +1,102 @@
+doctype
+html(lang="ru")
+  head
+    include ../_components/_service.jade
+    // ⚠️ SEO ⚠️
+    title Сухие строительные смеси «KLESTER System»
+    meta(name="description" content="Компания «KLESTER System» производитель сухих строительных смесей в Калининграде.")
+    meta(name="keywords" content="сухая смесь, сухие смеси, цена, стоимость, калининград, производитель, klester, ")
+    meta(name="robots" content="all")
+    link(rel="canonical" href="http://klester-kley.ru/about/")
+    include ../_path/_css.jade
+    include ../_components/_web-master.jade
+    include ../_path/_favicon.jade
+    // ⚠️ OPEN GRAPH ⚠️
+    meta(property="og:title" content="Купить сухие смеси KLESTER System")
+    meta(property="og:description" content="Купить сухую смесь (полуготовую), клей для пенополистирола, клей для каменной ваты, клей для керамической плитки, кладочную смесь, цемент в Калининграде.")
+    meta(property="og:image" content="../img/logo.svg")
+    meta(property="og:type" content="website")
+    meta(property="og:url" content="http://klester-kley.ru/")
+    include ../_components/_author.jade
+
+  body.hyphenate#body
+    .outdated
+    .container-fluid.header
+      header.container#top
+        .row
+          .col-xs-12
+            h1.sr-only О компании «KLESTER System»
+            include ../_path/_top-flex-menu.jade
+            include ../_components/_address.jade
+    article.container
+      .row
+        .col-xs-12
+          h2.donthyphenate Торговая марка «KLESTER System»
+        .col-xs-12
+          p Компания «KLESTER System» смогла учесть проблемы влияющие на экологию и за короткий срок занять лидирующие позиции среди производителей сухих смесей.
+        .col-md-6
+          h3.donthyphenate Почему мы?
+          p Строительная продукция производится на высокоточном итальянском оборудовании по немецкой рецептуре. Этот фундамент торговой марки «KLESTER System» помог приобрести партнёров и стать лидером в строительной сфере по производству сухих строительных смесей. Нам удаётся создавать продукцию, которая составляет достойную конкуренцию на рынке за счёт постоянного контроля качества на каждом этапе производства, собственной лаборатории и профессиональных рабочих.
+          h3.donthyphenate Преимущества сухих смесей «KLESTER System»
+          p Применение модификаторов, пластификаторов и минеральных вяжущих позволяют достичь высот в выпуске строительной продукции. Сочетание оптимально подобранных компонентов в итоговом продукте отличаются высокой адгезией, повышенной пластичностью при более высокой прочности на изгиб.
+          p При производстве операторы пульта соблюдают строгий контроль состава сухой смеси. Поэтому среди конкурентов, сухие смеси «KLESTER System» — выше качества.
+          p Простота приготовления раствора это преимущество сухих смесей. Потребителю не составит никакого труда добавить в смесь необходимое количество воды и размешать содержимое ручным или машинным методом.
+          p Компания «KLESTER System» изготавливает сухие смеси для кладочных, фасадных и прочих видов работ.
+        .col-md-6
+          .vertical.slider
+            //- .slider__item-adaptive-height
+            //-   video.img-responsive(controls="controls" preload="none" poster="video/cover.jpg")
+            //-     source.embed-responsive-item(src="video/klester.mp4" type="video/mp4")
+            .slider__item-adaptive-height
+              img.img-responsive(src="../img/slik-photo/slik5.jpg" alt="Производство сухих смесей")
+            .slider__item-adaptive-height
+              img.img-responsive(src="../img/slik-photo/slik4.jpg" alt="Производство сухих смесей")
+            .slider__item-adaptive-height
+              img.img-responsive(src="../img/slik-photo/slik3.jpg" alt="Производство сухих смесей")
+            .slider__item-adaptive-height
+              img.img-responsive(src="../img/slik-photo/slik2.jpg" alt="Производство сухих смесей")
+            .slider__item-adaptive-height
+              img.img-responsive(src="../img/slik-photo/slik1.jpg" alt="Производство сухих смесей")
+        .col-xs-12
+          h3.donthyphenate Как приобрести продукцию?
+        .col-xs-12
+          p Заказать продукцию компании можно позвонив по телефону +7 (4012) 999‒119, и один из девяти автомобилей, с различным тоннажом, доставит заказ по Калининграду и области.
+          p Какую компанию выбрать как производителя материалов для своего дома решать вам, но только компания «KLESTER System» способна производить качественный товар за минимальную цену.
+    
+    include ../_path/_footer.jade
+    
+    include ../_path/_script.jade
+    script(src="../js/jquery-3.2.1.min.js")
+    script(src="../js/Hyphenator.js")
+    script(src="../js/outdatedbrowser.min.js")
+    script(src="../js/slick.min.js")
+    script(src="../js/custom.js")
+    script.
+      var frm = frames['frame'].window;
+      var otherhead = frm.getElementsByTagName("head")[0];
+      var link = frm.createElement("link");
+      link.setAttribute("rel", "stylesheet");
+      link.setAttribute("type", "text/css");
+      link.setAttribute("href", "/html/css/main.css");
+      otherhead.appendChild(link);
+    script.
+      Hyphenator.run();
+      $(document).ready(function() {
+        $(".vertical").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        });
+      });
+      //call plugin function after DOM ready
+      addLoadEvent(function(){
+        outdatedBrowser({
+          bgColor: '#f25648',
+          color: '#ffffff',
+          lowerThan: 'transform',
+          languagePath: '../js/lang/ru.html'
+        })
+      });
+    include ../_components/_metric.jade

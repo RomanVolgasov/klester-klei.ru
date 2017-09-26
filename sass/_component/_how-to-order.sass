@@ -1,0 +1,172 @@
+.step-to-order
+  width: 65%
+  margin: 0 auto
+  text-align: center
+  @media (min-width: 768px) and (max-width: 991px)
+    width: 90%
+  @media (max-width: 767px)
+    width: 100%
+
+.step
+  display: block
+  margin: 65px 0
+  padding: 20px 40px
+  .text-right
+    float: right
+  @media (max-width: 767px)
+    margin: 20px 0
+    padding: 20px 0
+  p, ul
+    display: inline-block
+    list-style: none
+    width: 60%
+    @media (min-width: 768px) and (max-width: 991px)
+      width: 80%
+    a
+      color: $dark
+    @media (max-width: 767px)
+      list-style: disc
+      text-align: justify
+      width: 100%
+  .title
+    +rfs(20)
+    font-weight: 900
+    @media (max-width: 767px)
+      margin-top: 30px
+  &.text-right.-icon::before
+    content: ""
+    height: 360px
+    position: absolute
+    width: 450px
+    @media (min-width: 992px) and (max-width: 1199px)
+      height: 320px
+      width: 350px
+    @media (min-width: 768px) and (max-width: 991px)
+      height: 162px
+      width: 162px
+    @media (max-width: 767px)
+      display: block
+      height: 192px
+      position: relative
+      width: 192px
+
+  &.text-right.-call.-icon::before
+    background: url('../img/icon/call.svg') no-repeat
+    background-size: contain
+    left: 195px
+    margin-top: -109px
+    @media (min-width: 992px) and (max-width: 1199px)
+      left: 162px
+      margin-top: -56px
+    @media (min-width: 768px) and (max-width: 991px)
+      background: url('../img/icon/chat.svg') no-repeat
+      left: 25px
+      margin-top: -40px
+    @media (max-width: 767px)
+      background: url('../img/icon/chat.svg') no-repeat
+      left: 0
+      margin: 0 auto
+
+  &.text-right.-card.-icon::before
+    background: url('../img/icon/card.svg') no-repeat
+    background-size: contain
+    left: 195px
+    margin-top: -87px
+    height: 450px
+    width: 450px
+    @media (min-width: 992px) and (max-width: 1199px)
+      left: 162px
+      margin-top: -92px
+    @media (min-width: 768px) and (max-width: 991px)
+      background: url('../img/icon/credit-card.svg') no-repeat
+      left: 25px
+      margin-top: -40px
+      width: 162px
+    @media (max-width: 767px)
+      background: url('../img/icon/credit-card.svg') no-repeat
+      height: 192px
+      left: 0
+      margin: 0 auto
+      width: 192px
+
+  &.text-left.-icon::after
+    content: ""
+    height: 500px
+    position: absolute
+    width: 450px
+    @media (min-width: 992px) and (max-width: 1199px)
+      height: 210px
+      width: 350px
+    @media (min-width: 768px) and (max-width: 991px)
+      height: 162px
+      width: 162px
+    @media (max-width: 767px)
+      display: block
+      height: 192px
+      position: relative
+      width: 192px
+
+  &.text-left.-shoproom.-icon::after
+    background: url('../img/icon/shopping-room.svg') no-repeat
+    background-size: contain
+    margin-top: -304px
+    right: 120px
+    height: 560px
+    width: 450px
+    @media (min-width: 992px) and (max-width: 1199px)
+      height: 460px
+      margin-top: -234px
+      right: 21px
+    @media (min-width: 768px) and (max-width: 991px)
+      background: url('../img/icon/shopping-basket.svg') no-repeat
+      margin-top: -180px
+      right: 25px
+      width: 162px
+    @media (max-width: 767px)
+      display: none
+
+  &.text-left.-handshake.-icon::after
+    background: url('../img/icon/handshake.svg') no-repeat
+    background-size: contain
+    margin-top: -120px
+    right: 83px
+    height: 560px
+    width: 500px
+    @media (min-width: 992px) and (max-width: 1199px)
+      height: 460px
+      margin-top: -60px
+      right: -17px
+    @media (min-width: 768px) and (max-width: 991px)
+      background: url('../img/icon/target.svg') no-repeat
+      margin-top: -210px
+      right: 25px
+      width: 162px
+    @media (max-width: 767px)
+      display: none
+
+@media (max-width: 767px)
+  &.-handshake.-icon::before
+    background: url('../img/icon/target.svg') no-repeat
+    content: ''
+    display: block
+    height: 192px
+    margin: 0 auto
+    position: relative
+    width: 192px
+  &.-shoproom.-icon::before
+    background: url('../img/icon/shopping-basket.svg') no-repeat
+    content: ''
+    display: block
+    height: 192px
+    margin: 0 auto
+    position: relative
+    width: 192px
+
+.-call,
+.-shoproom,
+.-card,
+.-handshake
+  background-color: $gray
+  color: $dark
+  @media (max-width: 767px)
+    background-color: $white

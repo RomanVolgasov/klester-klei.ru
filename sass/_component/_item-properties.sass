@@ -1,0 +1,65 @@
+.item-properties__grid
+  display: flex
+  flex-flow: row wrap
+  align-items: stretch
+  justify-content: space-between
+  @media (min-width: 992px) and (max-width: 1199px)
+    justify-content: center
+  @media (max-width: 767px)
+    justify-content: center
+
+.item-properties__item
+  position: relative
+  padding-left: 90px
+  padding-right: 15px
+  margin: 25px 25px 15px 0
+  width: 320px
+  @media (max-width: 767px)
+    margin: 10px 5px
+
+.item-properties__title
+  font-weight: 900
+
+.item-properties__item::before
+  content: ""
+  position: absolute
+  left: 20px
+  top: 22px
+  width: 48px
+  height: 48px
+
+.-temperature.item-properties__item::before
+  background: url("../img/icon/thermometer.svg") 0 0
+  background-size: cover
+
+.-max-height.item-properties__item::before
+  background: url("../img/icon/resize.svg") 0 0
+  background-size: cover
+
+.-time-expluatation.item-properties__item::before
+  background: url("../img/icon/clock-of-circular-shape-at-two-o-clock.svg") 0 0
+  background-size: cover
+
+.-laying-tiles.item-properties__item::before
+  background: url("../img/icon/tiles.svg") 0 0
+  background-size: cover
+
+.-rotate-tiles.item-properties__item::before
+  background: url("../img/icon/triple-circular-arrows-symbol.svg") 0 0
+  background-size: cover
+
+.-step-tiles.item-properties__item::before
+  background: url("../img/icon/man-descending-stairs.svg") 0 0
+  background-size: cover
+
+.-joint-tiles.item-properties__item::before
+  background: url("../img/icon/square-menu.svg") 0 0
+  background-size: cover
+
+.-metter.item-properties__item::before
+  background: url("../img/icon/speed-meter.svg") 0 0
+  background-size: cover
+
+.-proportion.item-properties__item::before
+  background: url("../img/icon/test-tubes.svg") 0 0
+  background-size: cover

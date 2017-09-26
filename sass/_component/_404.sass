@@ -1,0 +1,36 @@
+.page404
+  align-items: center
+  background: url('../img/bg-404.jpeg') 50% 50% repeat
+  background-size: cover
+  display: flex
+  flex-direction: column
+  height: 100vh
+  justify-content: center
+  width: 100%
+  @media (max-width: 767px)
+    background: url('../img/bg-404.jpeg') 50% 100% repeat
+
+.page404__link-img
+  background: url("../img/logo.svg") no-repeat
+  background-size: cover
+  border-radius: 0.3125rem
+  height: 8rem
+  width: 8rem
+
+.page404__title
+  color: $white
+  +rfs(260)
+
+.transform
+  display: inline-block
+  transform: rotateY(-180deg)
+
+.page404__description
+  color: $white
+  +rfs(30)
+  line-height: 2rem
+  padding: 0 2rem
+  text-align: center
+  a
+    color: $brand-color
+    text-decoration: none

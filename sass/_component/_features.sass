@@ -1,0 +1,137 @@
+.features-bg
+  background-color: $dark
+  color: $white
+  padding: 1rem 0 4rem
+  margin: 4rem 0 2rem
+
+.-mt.features.-fl::after
+  top: 29px
+.-mt.features.-fr::before
+  top: 10px
+
+.features
+  width: 490px
+  border: 1px dashed $white
+  background-color: $dark
+  padding: 5px 20px
+  border-radius: 5px
+  margin: 20px 0
+  z-index: 2
+  position: relative
+  @media (max-width: 767px)
+    width: 100%
+    border-radius: 0
+  &.-fl
+    float: left
+    padding-left: 115px
+    margin-right: 170px
+    z-index: 2
+    &::after
+      content: ""
+      background: url("../img/icon/arrow.png") no-repeat
+      background-size: cover
+      width: 487px
+      height: 200px
+      position: absolute
+      z-index: -1
+      left: 490px
+      top: -1px
+      @media (min-width: 1px) and (max-width: 991px)
+        display: none
+    @media (max-width: 767px)
+      padding-left: 10px
+      margin-left: 14px
+      margin-right: 0
+      border-right: none
+  &.-fr
+    float: right
+    padding-right: 115px
+    &:last-of-type::before
+      width: 0
+    &::before
+      content: ""
+      background: url("../img/icon/arrow-reverse.png") no-repeat
+      background-size: cover
+      width: 487px
+      height: 200px
+      position: absolute
+      z-index: -1
+      right: 490px
+      top: -1px
+      @media (min-width: 1px) and (max-width: 991px)
+        display: none
+    .title
+      text-align: right
+    @media (max-width: 767px)
+      padding-right: 10px
+      margin-right: 14px
+      border-left: none
+  &.-technology::before
+    content: ""
+    background: url('../img/icon/technology.svg') no-repeat
+    background-size: cover
+    position: absolute
+    width: 64px
+    height: 64px
+    left: 25px
+    top: 25px
+    @media (max-width: 767px)
+      content: none
+  &.-prof::after
+    content: ""
+    background: url('../img/icon/worker.svg') no-repeat
+    background-size: cover
+    position: absolute
+    width: 64px
+    height: 64px
+    right: -15px
+    top: 25px
+    right: 25px
+    @media (max-width: 767px)
+      content: none
+  &.-proportion::before
+    content: ""
+    background: url('../img/icon/laser.svg') no-repeat
+    background-size: cover
+    position: absolute
+    width: 64px
+    height: 64px
+    left: 25px
+    top: 25px
+    @media (max-width: 767px)
+      content: none
+  &.-usage::after
+    content: ""
+    background: url('../img/icon/gear.svg') no-repeat
+    background-size: cover
+    position: absolute
+    width: 64px
+    height: 64px
+    right: -15px
+    top: 25px
+    right: 25px
+    @media (max-width: 767px)
+      content: none
+  &.-stock::before
+    content: ""
+    background: url('../img/icon/boxes.svg') no-repeat
+    background-size: cover
+    position: absolute
+    width: 64px
+    height: 64px
+    left: 25px
+    top: 25px
+    @media (max-width: 767px)
+      content: none
+  &.-price::after
+    content: ""
+    background: url('../img/icon/danger.svg') no-repeat
+    background-size: cover
+    position: absolute
+    width: 64px
+    height: 64px
+    right: -15px
+    top: 25px
+    right: 25px
+    @media (max-width: 767px)
+      content: none

@@ -1,0 +1,24 @@
+doctype
+html(lang="ru")
+  head
+    include _components/_service.jade
+    // ⚠️ SEO ⚠️
+    title 404
+    meta(name="description" content="Страница 404")
+    meta(name="keywords" content="404")
+    meta(name="robots" content="noindex")
+    include _path/_css.jade
+    include _components/_web-master.jade
+    include _path/_favicon.jade
+    include _components/_author.jade
+  body
+    .page404
+      .outdated
+      a.page404__link-img(href="/" title="На главную")
+      h1.sr-only 404
+      p.page404__description Здесь ничего нет. Вернитесь на 
+        a(href="/" title="Главная страница сайта") главную страницу 
+        | сайта.
+      span.page404__title 40
+        span.transform 4
+    include _path/_script.jade
