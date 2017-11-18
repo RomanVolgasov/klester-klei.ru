@@ -71,14 +71,14 @@ html(lang="ru")
     script(src="../js/outdatedbrowser.min.js")
     script(src="../js/slick.min.js")
     script(src="../js/custom.js")
-    script.
-      var frm = frames['frame'].window;
-      var otherhead = frm.getElementsByTagName("head")[0];
-      var link = frm.createElement("link");
-      link.setAttribute("rel", "stylesheet");
-      link.setAttribute("type", "text/css");
-      link.setAttribute("href", "/css/main.css");
-      otherhead.appendChild(link);
+    //- script.
+    //-   var frm = frames['frame'].window;
+    //-   var otherhead = frm.getElementsByTagName("head")[0];
+    //-   var link = frm.createElement("link");
+    //-   link.setAttribute("rel", "stylesheet");
+    //-   link.setAttribute("type", "text/css");
+    //-   link.setAttribute("href", "/css/main.css");
+    //-   otherhead.appendChild(link);
     script.
       Hyphenator.run();
       $(document).ready(function() {
@@ -91,12 +91,12 @@ html(lang="ru")
         });
       });
       //call plugin function after DOM ready
-      addLoadEvent(function(){
-        outdatedBrowser({
-          bgColor: '#f25648',
-          color: '#ffffff',
-          lowerThan: 'transform',
-          languagePath: '../js/lang/ru.html'
-        })
-      });
+      //- addLoadEvent(function(){
+      //-   outdatedBrowser({
+      //-     bgColor: '#f25648',
+      //-     color: '#ffffff',
+      //-     lowerThan: 'transform',
+      //-     languagePath: '../js/lang/ru.html'
+      //-   })
+      //- });
     include ../_components/_metric.jade

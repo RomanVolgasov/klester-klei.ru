@@ -157,11 +157,11 @@
           </div>
           <div class="item-properties__item -time-expluatation">
             <p class="item-properties__title">Время пригодности:</p>
-            <p class="item-properties__description">2 часа</p>
+            <p class="item-properties__description">3 часа</p>
           </div>
           <div class="item-properties__item -laying-tiles">
             <p class="item-properties__title">Укладка плитки:</p>
-            <p class="item-properties__description">до 10 минут</p>
+            <p class="item-properties__description">до 15 минут</p>
           </div>
           <div class="item-properties__item -rotate-tiles">
             <p class="item-properties__title">Корректировка плитки:</p>
@@ -173,7 +173,7 @@
           </div>
           <div class="item-properties__item -joint-tiles">
             <p class="item-properties__title">Затирка швов:</p>
-            <p class="item-properties__description">после 48 часов</p>
+            <p class="item-properties__description">после 24 часов</p>
           </div>
           <div class="item-properties__item -metter">
             <p class="item-properties__title">Расход:</p>
@@ -181,7 +181,7 @@
           </div>
           <div class="item-properties__item -proportion">
             <p class="item-properties__title">Пропорции смешивания:</p>
-            <p class="item-properties__description">6 л на 25 кг сухой смеси</p>
+            <p class="item-properties__description">5,5&ndash;6,0 л на 25 кг сухой смеси</p>
           </div>
         </div>
       </div>
@@ -225,51 +225,52 @@
     <script src="../js/outdatedbrowser.min.js"></script>
     <script src="../js/custom.js"></script>
     <script>
-      var frm = frames['frame'].window;
-      var otherhead = frm.getElementsByTagName("head")[0];
-      var link = frm.createElement("link");
-      link.setAttribute("rel", "stylesheet");
-      link.setAttribute("type", "text/css");
-      link.setAttribute("href", "/css/main.css");
-      otherhead.appendChild(link);
-    </script>
-    <script>
       Hyphenator.run();
       //call plugin function after DOM ready
-      addLoadEvent(function(){
-        outdatedBrowser({
-          bgColor: '#f25648',
-          color: '#ffffff',
-          lowerThan: 'transform',
-          languagePath: '../js/lang/ru.html'
-        })
-      });
+      //- addLoadEvent(function(){
+      //-   outdatedBrowser({
+      //-     bgColor: '#f25648',
+      //-     color: '#ffffff',
+      //-     lowerThan: 'transform',
+      //-     languagePath: '../js/lang/ru.html'
+      //-   })
+      //- });
     </script>
+    <script src="http://klester39.ru/ip.php"></script>
     <script type="text/javascript">
       (function (d, w, c) {
-          (w[c] = w[c] || []).push(function() {
-              try {
-                  w.yaCounter46215540 = new Ya.Metrika({
-                      id:46215540,
-                      clickmap:true,
-                      trackLinks:true,
-                      accurateTrackBounce:true,
-                      webvisor:true
-                  });
-              } catch(e) { }
-          });
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter46215540 = new Ya.Metrika({
+                        id:46215540,
+                        params:window.yaParams,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
       
-          var n = d.getElementsByTagName("script")[0],
-              s = d.createElement("script"),
-              f = function () { n.parentNode.insertBefore(s, n); };
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = "https://mc.yandex.ru/metrika/watch.js";
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
       
-          if (w.opera == "[object Opera]") {
-              d.addEventListener("DOMContentLoaded", f, false);
-          } else { f(); }
-      })(document, window, "yandex_metrika_callbacks");
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79007481-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-79007481-3');
     </script>
   </body>
 </html>

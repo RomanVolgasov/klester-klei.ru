@@ -110,10 +110,10 @@ html(lang="ru")
             p.item-properties__description до 5 мм
           .item-properties__item.-time-expluatation
             p.item-properties__title Время пригодности:
-            p.item-properties__description 2 часа
+            p.item-properties__description 3 часа
           .item-properties__item.-laying-tiles
             p.item-properties__title Укладка плитки:
-            p.item-properties__description до 10 минут
+            p.item-properties__description до 15 минут
           .item-properties__item.-rotate-tiles
             p.item-properties__title Корректировка плитки:
             p.item-properties__description до 10 минут
@@ -122,13 +122,13 @@ html(lang="ru")
             p.item-properties__description после 24 часов
           .item-properties__item.-joint-tiles
             p.item-properties__title Затирка швов:
-            p.item-properties__description после 48 часов
+            p.item-properties__description после 24 часов
           .item-properties__item.-metter
             p.item-properties__title Расход:
             p.item-properties__description около 1,3 кг/м&sup2;
           .item-properties__item.-proportion
             p.item-properties__title Пропорции смешивания:
-            p.item-properties__description 6 л на 25 кг сухой смеси
+            p.item-properties__description 5,5&ndash;6,0 л на 25 кг сухой смеси
     
     include ../_path/_footer.jade
     
@@ -137,23 +137,23 @@ html(lang="ru")
     script(src="../js/Hyphenator.js")
     script(src="../js/outdatedbrowser.min.js")
     script(src="../js/custom.js")
-    script.
-      var frm = frames['frame'].window;
-      var otherhead = frm.getElementsByTagName("head")[0];
-      var link = frm.createElement("link");
-      link.setAttribute("rel", "stylesheet");
-      link.setAttribute("type", "text/css");
-      link.setAttribute("href", "/css/main.css");
-      otherhead.appendChild(link);
+    //- script.
+    //-   var frm = frames['frame'].window;
+    //-   var otherhead = frm.getElementsByTagName("head")[0];
+    //-   var link = frm.createElement("link");
+    //-   link.setAttribute("rel", "stylesheet");
+    //-   link.setAttribute("type", "text/css");
+    //-   link.setAttribute("href", "/css/main.css");
+    //-   otherhead.appendChild(link);
     script.
       Hyphenator.run();
       //call plugin function after DOM ready
-      addLoadEvent(function(){
-        outdatedBrowser({
-          bgColor: '#f25648',
-          color: '#ffffff',
-          lowerThan: 'transform',
-          languagePath: '../js/lang/ru.html'
-        })
-      });
+      //- addLoadEvent(function(){
+      //-   outdatedBrowser({
+      //-     bgColor: '#f25648',
+      //-     color: '#ffffff',
+      //-     lowerThan: 'transform',
+      //-     languagePath: '../js/lang/ru.html'
+      //-   })
+      //- });
     include ../_components/_metric.jade

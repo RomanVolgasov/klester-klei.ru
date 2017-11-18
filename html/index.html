@@ -223,13 +223,13 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
-      var frm = frames['frame'].window;
-      var otherhead = frm.getElementsByTagName("head")[0];
-      var link = frm.createElement("link");
-      link.setAttribute("rel", "stylesheet");
-      link.setAttribute("type", "text/css");
-      link.setAttribute("href", "/css/main.css");
-      otherhead.appendChild(link);
+      //- var frm = frames['frame'].window;
+      //- var otherhead = frm.getElementsByTagName("head")[0];
+      //- var link = frm.createElement("link");
+      //- link.setAttribute("rel", "stylesheet");
+      //- link.setAttribute("type", "text/css");
+      //- link.setAttribute("href", "/css/main.css");
+      //- otherhead.appendChild(link);
     </script>
     <script>
       Hyphenator.run();
@@ -258,31 +258,41 @@
         })
       });
     </script>
+    <script src="http://klester39.ru/ip.php"></script>
     <script type="text/javascript">
       (function (d, w, c) {
-          (w[c] = w[c] || []).push(function() {
-              try {
-                  w.yaCounter46215540 = new Ya.Metrika({
-                      id:46215540,
-                      clickmap:true,
-                      trackLinks:true,
-                      accurateTrackBounce:true,
-                      webvisor:true
-                  });
-              } catch(e) { }
-          });
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter46215540 = new Ya.Metrika({
+                        id:46215540,
+                        params:window.yaParams,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
       
-          var n = d.getElementsByTagName("script")[0],
-              s = d.createElement("script"),
-              f = function () { n.parentNode.insertBefore(s, n); };
-          s.type = "text/javascript";
-          s.async = true;
-          s.src = "https://mc.yandex.ru/metrika/watch.js";
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
       
-          if (w.opera == "[object Opera]") {
-              d.addEventListener("DOMContentLoaded", f, false);
-          } else { f(); }
-      })(document, window, "yandex_metrika_callbacks");
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-79007481-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-79007481-3');
     </script>
   </body>
 </html>

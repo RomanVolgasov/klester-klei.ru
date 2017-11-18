@@ -39,6 +39,7 @@ html(lang="ru")
               ul.tab__list
                 li.tab__list-item Назначение
                 li.tab__list-item Технические характеристики
+                li.tab__list-item Инфографика
 
             .tab__container
               .tab__item-block
@@ -74,7 +75,9 @@ html(lang="ru")
                   tr.material-table__row
                     td.material-table__cell Хранение:
                     td.material-table__cell 12 месяцев
-              
+              .tab__item-block
+                img.img-responsive(src="../img/infographic/infografika_sukhie_smesi_KLESTER_System.jpg", alt="Инфографика: универсальная сухая смесь для приклеивания пенополистирола")
+                  
         .col-xs-12.col-sm-4
           img.img-responsive(src="../img/catalog/zm-01.jpg" alt="клей для пенополистирола ZM-01 «KLESTER System»")
           p.catalog__price 189 руб.
@@ -84,13 +87,13 @@ html(lang="ru")
             p.item-properties__description от +5&deg;C до +25&deg;C
           .item-properties__item.-time-expluatation
             p.item-properties__title Время пригодности:
-            p.item-properties__description 2 часа
+            p.item-properties__description 3 часа
           .item-properties__item.-metter
             p.item-properties__title Расход:
             p.item-properties__description 4&ndash;5 кг/м&sup2;
           .item-properties__item.-proportion
             p.item-properties__title Пропорции смешивания:
-            p.item-properties__description 6,3 л на 25 кг сухой смеси
+            p.item-properties__description 5,5&ndash;6,0 л на 25 кг сухой смеси
     
     include ../_path/_footer.jade
     
@@ -99,23 +102,23 @@ html(lang="ru")
     script(src="../js/Hyphenator.js")
     script(src="../js/outdatedbrowser.min.js")
     script(src="../js/custom.js")
-    script.
-      var frm = frames['frame'].window;
-      var otherhead = frm.getElementsByTagName("head")[0];
-      var link = frm.createElement("link");
-      link.setAttribute("rel", "stylesheet");
-      link.setAttribute("type", "text/css");
-      link.setAttribute("href", "/css/main.css");
-      otherhead.appendChild(link);
+    //- script.
+    //-   var frm = frames['frame'].window;
+    //-   var otherhead = frm.getElementsByTagName("head")[0];
+    //-   var link = frm.createElement("link");
+    //-   link.setAttribute("rel", "stylesheet");
+    //-   link.setAttribute("type", "text/css");
+    //-   link.setAttribute("href", "/css/main.css");
+    //-   otherhead.appendChild(link);
     script.
       Hyphenator.run();
       //call plugin function after DOM ready
-      addLoadEvent(function(){
-        outdatedBrowser({
-          bgColor: '#f25648',
-          color: '#ffffff',
-          lowerThan: 'transform',
-          languagePath: '../js/lang/ru.html'
-        })
-      });
+      //- addLoadEvent(function(){
+      //-   outdatedBrowser({
+      //-     bgColor: '#f25648',
+      //-     color: '#ffffff',
+      //-     lowerThan: 'transform',
+      //-     languagePath: '../js/lang/ru.html'
+      //-   })
+      //- });
     include ../_components/_metric.jade

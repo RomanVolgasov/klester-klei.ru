@@ -77,7 +77,7 @@ html(lang="ru")
                     td.material-table__cell 25 кг
                   tr.material-table__row
                     td.material-table__cell Хранение:
-                    td.material-table__cell 6 месяцев
+                    td.material-table__cell 12 месяцев
               .tab__item-block
                 table.material-table
                   tr.material-table__row
@@ -152,9 +152,9 @@ html(lang="ru")
             p.item-properties__description от +5&deg;C до +25&deg;C
           .item-properties__item.-time-expluatation
             p.item-properties__title Время пригодности:
-            p.item-properties__description 2 часа
+            p.item-properties__description 1 час
           .item-properties__item.-metter
-            p.item-properties__title Расход:
+            p.item-properties__title Производительность:
             p.item-properties__description около 1.88 кг/дм&sup3;
           .item-properties__item.-proportion
             p.item-properties__title Пропорции смешивания:
@@ -167,23 +167,23 @@ html(lang="ru")
     script(src="../js/Hyphenator.js")
     script(src="../js/outdatedbrowser.min.js")
     script(src="../js/custom.js")
-    script.
-      var frm = frames['frame'].window;
-      var otherhead = frm.getElementsByTagName("head")[0];
-      var link = frm.createElement("link");
-      link.setAttribute("rel", "stylesheet");
-      link.setAttribute("type", "text/css");
-      link.setAttribute("href", "/css/main.css");
-      otherhead.appendChild(link);
+    //- script.
+    //-   var frm = frames['frame'].window;
+    //-   var otherhead = frm.getElementsByTagName("head")[0];
+    //-   var link = frm.createElement("link");
+    //-   link.setAttribute("rel", "stylesheet");
+    //-   link.setAttribute("type", "text/css");
+    //-   link.setAttribute("href", "/css/main.css");
+    //-   otherhead.appendChild(link);
     script.
       Hyphenator.run();
       //call plugin function after DOM ready
-      addLoadEvent(function(){
-        outdatedBrowser({
-          bgColor: '#f25648',
-          color: '#ffffff',
-          lowerThan: 'transform',
-          languagePath: '../js/lang/ru.html'
-        })
-      });
+      //- addLoadEvent(function(){
+      //-   outdatedBrowser({
+      //-     bgColor: '#f25648',
+      //-     color: '#ffffff',
+      //-     lowerThan: 'transform',
+      //-     languagePath: '../js/lang/ru.html'
+      //-   })
+      //- });
     include ../_components/_metric.jade
