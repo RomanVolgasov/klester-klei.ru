@@ -7,5 +7,6 @@ Disallow: /js/patterns/*
 Disallow: /css/_color/*
 Disallow: /css/_component/*
 Disallow: *404.html*
+Disallow: /cement/
 Sitemap: http://klester39.ru/sitemap.xml
 Host: http://klester39.ru
