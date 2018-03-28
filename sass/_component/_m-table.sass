@@ -1,6 +1,10 @@
-.material-table
+.material-table,
+.material-table-big
   border-collapse: collapse
   width: 100%
+
+.material-table-big .material-table__row .material-table__cell
+  text-align: left
 
 .material-table__cell
   padding: 0.3125rem 0.4375rem
@@ -9,6 +13,9 @@
   font-weight: bold
   padding: 1rem 0.4375rem
   text-align: left
+
+.material-fill
+  background-color: $gray
 
 .material-table__row
   border-bottom: 1px solid $gray-dark
