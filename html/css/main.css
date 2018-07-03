@@ -2321,10 +2321,14 @@ figure {
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out; }
+  .tab__list-item:hover {
+    background-color: rgba(66, 66, 66, 0.1); }
 
 .current-tab {
   background: #424242;
   color: #FAFAFA; }
+  .current-tab:hover {
+    background: #424242; }
 
 .tab__container {
   padding-left: 0.6rem; }
