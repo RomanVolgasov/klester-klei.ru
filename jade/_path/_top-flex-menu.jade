@@ -3,8 +3,9 @@
   nav.top-nav__list#navigation
     h2.sr-only Навигация по сайту
     a.top-nav__item.-link(href="/") Главная
+    a.top-nav__item.-link(href="http://penoplast-klester.ru" title="Пенополистирол") Пенополистирол
     a.top-nav__item.-link(href="/about/") О компании
     //- a.top-nav__item.-link(href="/html/tekhnologiya/") Технология
-    button.top-nav__item.top-nav__item_btn(type="button" onclick="jivo_api.open();") Обратная связь
+    a.top-nav__item.top-nav__item_btn(href="#chat" onclick="jivo_api.open();") Обратная связь
   button.toggle(data-collapse data-target="#navigation")
     span.icon
